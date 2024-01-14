@@ -263,7 +263,7 @@ class HBNBCommand(cmd.Cmd):
             print("** no instance found **")
             return
 
-        # first determine if kwargs or args
+        # first determin if kwargs or args
         if '{' in args[2] and '}' in args[2] and type(eval(args[2])) is dict:
             kwargs = eval(args[2])
             args = []  # reformat kwargs into list, ex: [<name>, <value>, ...]
